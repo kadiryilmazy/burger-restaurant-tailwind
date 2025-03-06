@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../dist/output.css" />
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <title>Burger</title>
+    </head>
+    <body>
+        <header class="fixed left-0 z-50 w-full bg-primary-color">
+            <nav class="container relative flex items-center justify-between h-14">
+                <div>
+                    <a href="#" class="text-2xl uppercase"> Bur<span class="text-secondary-color font-oswald">ger</span> </a>
+                </div>
+                <div id="nav-menu" class="absolute top-0 left-0 hidden w-full border-b py-14 bg-primary-color border-secondary-color md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto">
+                    <ul class="flex flex-col gap-5 text-center md:flex-row">
+                        <li>
+                            <a href="#home" class="duration-200 ease-in nav__link hover:text-secondary-color">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="duration-200 ease-in nav__link hover:text-secondary-color">About </a>
+                        </li>
+                        <li>
+                            <a href="#menu" class="duration-200 ease-in nav__link hover:text-secondary-color">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#review" class="duration-200 ease-in nav__link hover:text-secondary-color">Review</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="duration-200 ease-in nav__link hover:text-secondary-color">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden">
+                        <i id="nav-close" class="ri-close-line"></i>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <i class="ml-4 text-xl cursor-pointer ri-moon-line"></i>
+                    <div id="hamburger">
+                        <i class="text-xl cursor-pointer ri-menu-2-line md:hidden"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <div class="container flex flex-col items-center gap-10 md:flex-row">
+                    <div class="mx-auto md:basis-1/2 lg:basis-2/5">
+                        <img src="./img/home-image.png" class="w-60 md:w-full animate-moving-y" />
+                    </div>
+                    <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+                        <h1 class="home__title">LEZZETLİ BURGERLERLE MUTLU MİDELER!</h1>
+                        <div class="mx-auto separator md:mx-0"></div>
+                        <p class="paragraph">
+                            Lezzetli burgerler, mutlu anlar yaratır. Her ısırıkta eşsiz bir lezzet deneyimi sunar. En taze malzemelerle hazırlanan burgerlerimiz, damak zevkinize hitap eder. Kalite,
+                            lezzet ve mutluluk için doğru adrestesiniz.
+                        </p>
+                        <div class="flex items-center justify-center gap-4 py-10 text-base md:justify-start md:gap-20">
+                            <div class="text-center">
+                                <i class="text-4xl text-center fa-solid fa-utensils text-secondary-color"></i>
+                                <br />
+                                Leziz
+                            </div>
+                            <div class="text-center">
+                                <i class="text-4xl text-center fa-solid fa-droplet text-secondary-color"></i>
+                                <br />
+                                Taze
+                            </div>
+                            <div class="text-center">
+                                <i class="text-4xl text-center fa-solid fa-envira text-secondary-color"></i>
+                                <br />
+                                Organik
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-primary">Daha Fazla</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="category>">
+                <div class="container flex flex-col gap-5 md:flex-row md:flex-1">
+                    <div class="flex py-3 overflow-hidden rounded-lg bg-secondary-color md:flex-row md:flex-1">
+                        <div class="relative basis-1/3"><img class="absolute w-28 -bottom-4 -left-4" src="img/burger-1.png" alt="category image" /></div>
+                        <div>
+                            <div class="mb-2">
+                                <h4 class="card__title">Yemek</h4>
+                                <p class="text-xs">Lorem ipsum</p>
+                            </div>
+                            <a href="#" class="font-bold cursor-pointer text-red-color">Sipariş Ver</a>
+                        </div>
+                    </div>
+                    <div class="flex py-3 overflow-hidden rounded-lg bg-red-color md:flex-row md:flex-1">
+                        <div class="relative basis-1/3"><img class="absolute w-28 -bottom-4 -left-4" src="img/beverage-2.png" alt="category image" /></div>
+                        <div>
+                            <div class="mb-2">
+                                <h4 class="card__title">Yemek</h4>
+                                <p class="text-xs">Lorem ipsum</p>
+                            </div>
+                            <a href="#" class="font-bold cursor-pointer text-green-color">Sipariş Ver</a>
+                        </div>
+                    </div>
+                    <div class="flex py-3 overflow-hidden rounded-lg bg-green-color md:flex-row md:flex-1">
+                        <div class="relative basis-1/3"><img class="absolute w-28 -bottom-4 -left-4" src="img/beverage-1.png" alt="category image" /></div>
+                        <div>
+                            <div class="mb-2">
+                                <h4 class="card__title">Yemek</h4>
+                                <p class="text-xs">Lorem ipsum</p>
+                            </div>
+                            <a href="#" class="font-bold cursor-pointer text-secondary-color">Sipariş Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="promo">
+                <div class="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
+                    <div class="flex flex-col p-5 rounded-lg bg-primary-color-light md:flex-row md:items-center lg:flex-row-reverse">
+                        <img src="img/promo-1.png" alt="promo image" class="w-40 mx-auto hover:animate-moving-y" />
+                        <div class="pt-5 space-y-2 md:pt-0">
+                            <p class="text-xs text-secondary-color">Payday promo</p>
+                            <h3 class="card__title">GET a 10% discount</h3>
+                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dicta a tempora ipsum quisquam</p>
+                            <a class="text-xs text-secondary-color" href="#">Sipariş Ver</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-5 rounded-lg bg-primary-color-light md:flex-row md:items-center lg:flex-row-reverse">
+                        <img src="img/promo-2.png" alt="promo image" class="w-40 mx-auto hover:animate-moving-y" />
+                        <div class="pt-5 space-y-2 md:pt-0">
+                            <p class="text-xs text-secondary-color">Payday promo</p>
+                            <h3 class="card__title">GET a 10% discount</h3>
+                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dicta a tempora ipsum quisquam</p>
+                            <a class="text-xs text-secondary-color" href="#">Sipariş Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="container flex flex-col gap-10 md:flex-row">
+                    <div class="flex-1">
+                        <img src="img/about.jpg" alt="about" class="rounded-lg" />
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="section__title">FIND FOOD AND DRINKS</h2>
+                        <div class="mx-auto separator md:mx-0"></div>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur, tempora quisquam quis cum nemo eaque nisi ut! Dolore reiciendis aliquam a eos obcaecati omnis?
+                            Voluptatum veritatis quasi deleniti aspernatur!
+                        </p>
+                        <ul class="grid grid-cols-2 py-5 space-y-1">
+                            <li class="text-xs text-paragraph-color"><i class="fa-solid fa-check text-secondary-color"></i> Price</li>
+                            <li class="text-xs text-paragraph-color"><i class="fa-solid fa-check text-secondary-color"></i> Fresh Ingredient</li>
+                            <li class="text-xs text-paragraph-color"><i class="fa-solid fa-check text-secondary-color"></i> Best Service</li>
+                            <li class="text-xs text-paragraph-color"><i class="fa-solid fa-check text-secondary-color"></i> Healt Protocol</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">About Us</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="./main.js"></script>
+    </body>
+</html>
